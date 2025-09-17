@@ -1,17 +1,9 @@
 Microwatt as a Sensor Fusion Hub
 
 This project aims to extend the Microwatt CPU core into a specialized sensor fusion hub by integrating standard hardware interfaces and a dedicated fusion accelerator.
-
-Microwatt will be enhanced with interfaces such as I²C, SPI, UART, and GPIO, enabling it to connect directly with a wide range of sensors commonly used in IoT and robotics applications. To efficiently process incoming data streams, a lightweight hardware fusion accelerator (e.g., implementing a Kalman filter) will be integrated alongside the core. This accelerator will offload sensor fusion tasks from the CPU, providing faster and more power-efficient data processing compared to a software-only approach.
-
+Microwatt will be enhanced with interfaces such as I²C, SPI, UART, and GPIO, enabling it to connect directly with a wide range of sensors commonly used in IoT and robotics applications. 
+To efficiently process incoming data streams, a lightweight hardware fusion accelerator (e.g., implementing a Kalman filter) will be integrated alongside the core. This accelerator will offload sensor fusion tasks from the CPU, providing faster and more power-efficient data processing compared to a software-only approach.
 The project demonstrates its value through a practical use case: Microwatt gathers data from an accelerometer, gyroscope, and temperature sensor, and then fuses this information in real-time. The fusion process generates reliable and accurate system state estimates, which can be used for decision-making in robotics, autonomous systems, and IoT devices.
+By completing this project, we showcase: Clear real-world applicability: Sensor fusion is essential for balancing robots, stabilizing drones, and enabling smart IoT devices.
 
-By completing this project, we showcase:
-
-Clear real-world applicability: Sensor fusion is essential for balancing robots, stabilizing drones, and enabling smart IoT devices.
-
-Reproducibility: Since Microwatt is open-source and FPGA-compatible, others can replicate and build upon this work.
-
-FPGA-to-ASIC flow demonstration: The project highlights a realistic hardware development path, starting with FPGA prototyping and extending to potential ASIC implementation.
-
-Ultimately, this project transforms the Microwatt CPU core from a simple processor into a specialized sensor fusion platform, bridging the gap between general-purpose CPUs and application-specific hardware accelerators in embedded systems.
+Ultimately, this project transforms the Microwatt CPU core from a simple processor into a specialized sensor fusion platform, bridging the gap between general-purpose CPUs and application-specific hardware accelerators.
